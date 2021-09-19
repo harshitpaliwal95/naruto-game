@@ -8,20 +8,39 @@
     <title>Naruto</title>
   </head>
   <body>
-    <main class="winner">
+    <audio id="song">
+      <source src="audio/naruto_somg.mp3" type="audio/mp3" />
+    </audio>
+    <div class="winner">
+      <img id="winner-img" src="img/char-3.gif" alt="" />
+    </div>
+    <main class="main">
       <div class="main-box">
         <div class="image-box">
-          <h1 id="player-0">You</h1>
-          <img id="img-1" src="img/char-6.gif" alt="" srcset="" />
+          <h1 id="player-0">Name</h1>
+          <h2 id="power-0">Power</h2>
+          <img id="img-1" src="img/mark-Q.gif" alt="" />
         </div>
 
         <div class="image-box">
-          <h1 id="player-1">Your friend</h1>
-          <img id="img-2" src="img/char-9.gif" alt="" srcset="" />
+          <h1 id="player-1">Name</h1>
+          <h2 id="power-1">Power</h2>
+          <img id="img-2" src="img/mark-Q.gif" alt="" />
         </div>
       </div>
       <button class="btn">Start</button>
     </main>
+    <div class="write">
+      <p>basic card game on Naruto Anime</p>
+      <p>
+        when you click on start a random character compare to other character
+      </p>
+      <p>power full shinobi will display in large size with music 🥳</p>
+      <p>wait for 10 sec after one click on start</p>
+      <p>hit ok to start</p>
+      <button class="okBtn btn">Ok</button>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>

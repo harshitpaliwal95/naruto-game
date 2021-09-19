@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Birthstone&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -13,10 +14,15 @@ html {
 }
 
 body {
-  font-family: "Nunito", sans-serif;
-  font-weight: 400;
-  color: #333;
-  background-image: url(img/back-img.jpeg);
+  font-family: "Birthstone", cursive;
+  font-size: 20px;
+  color: white;
+  background: #0f2027;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#2c5364), color-stop(#203a43), to(#0f2027));
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-color: #cccccc;
   height: 100vh;
   background-size: cover;
@@ -44,7 +50,6 @@ main {
   -webkit-box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
           box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
   border-radius: 9px;
-  overflow: hidden;
 }
 
 .myBtn {
@@ -64,25 +69,28 @@ main {
           align-items: center;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  color: #444;
+  color: white;
   background: none;
   border: none;
   font-family: inherit;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   cursor: pointer;
   font-weight: 400;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   top: 40px;
-  background-color: white;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(0, 0, 0, 0.921);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  padding: 0.7rem 2.5rem;
+  padding: 0.7rem 2.9rem;
   border-radius: 50rem;
-  -webkit-box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 5px 15px black;
+          box-shadow: 0px 5px 15px black;
+}
+
+.btn:hover {
+  background-color: #4f4f4f;
 }
 
 .main-box {
@@ -94,26 +102,65 @@ main {
           justify-content: space-between;
 }
 
-.main-box h1 {
+.main-box h1,
+.main-box h2 {
   text-align: center;
   margin: 10px;
+  border-radius: 10px;
   font-size: 35px;
   font-weight: 900;
-  background-color: rgba(111, 111, 111, 0.297);
+  background-color: rgba(0, 0, 0, 0.441);
 }
 
 .main-box .image-box {
   width: 350px;
   height: 250px;
-  margin: 150px 30px;
+  margin: 80px 30px;
 }
 
-img {
+.main-box img {
   width: 100%;
   border-radius: 10px;
   -webkit-box-shadow: 0px 5px 15px black;
           box-shadow: 0px 5px 15px black;
   -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.winner {
+  width: 80rem;
+  height: 60rem;
+  background-color: rgba(242, 235, 235, 0.058);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  -webkit-filter: blur();
+          filter: blur();
+  -webkit-box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.winner #winner-img {
+  width: 100%;
+}
+
+.write {
+  margin: auto;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.write .okBtn {
+  top: 100px;
+}
+
+.hidden {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

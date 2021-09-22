@@ -36,33 +36,20 @@ function randomNumber() {
 }
 
 // default
-document.querySelector(".winner").classList.add("hidden");
+winner.classList.add("hidden");
 
-const charName = [
-  "",
-  "Hashirama",
-  "ino",
-  "Kakashi",
-  "Madara_Uchiha",
-  "Might_Guy",
-  "Naruto",
-  "Sai",
-  "Sakura",
-  "Sasuke_Uchiha",
-  "Shikamaru",
-];
-const charPower = [
-  "null",
-  100000,
-  9000,
-  50000,
-  95000,
-  49000,
-  85000,
-  20000,
-  30000,
-  84000,
-  40000,
+let char = [
+  { name: "null" },
+  { name: "Hashirama", power: 100000 },
+  { name: "ino", power: 9000 },
+  { name: "Kakashi", power: 50000 },
+  { name: "Madara_Uchiha", power: 95000 },
+  { name: "Might_Guy", power: 49000 },
+  { name: "Naruto", power: 85000 },
+  { name: "Sai", power: 20000 },
+  { name: "Sakura", power: 30000 },
+  { name: "Sasuke_Uchiha", power: 84000 },
+  { name: "Shikamaru", power: 40000 },
 ];
 
 btn.addEventListener("click", function () {
@@ -70,11 +57,11 @@ btn.addEventListener("click", function () {
   let random_2 = randomNumber();
 
   // change char name for player one
-  let p1Name = charName[random_1];
+  let p1Name = char[random_1].name;
   player1.innerHTML = p1Name;
 
   // change char power for player one
-  let p1power = charPower[random_1];
+  let p1power = char[random_1].power;
   power1.innerHTML = p1power;
 
   // img change for player one
@@ -85,11 +72,11 @@ btn.addEventListener("click", function () {
     imgOne.src = `img/charImg-${random_1}.jpeg`;
   }
   // change char name for player two
-  let p2Name = charName[random_2];
+  let p2Name = char[random_2].name;
   player2.innerHTML = p2Name;
 
   // change char power for player one
-  let p2Power = charPower[random_2];
+  let p2Power = char[random_2].power;
   power2.innerHTML = p2Power;
 
   // img change for player two

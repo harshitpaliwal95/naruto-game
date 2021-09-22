@@ -79,10 +79,10 @@ btn.addEventListener("click", function () {
 
   // img change for player one
   if (random_1 !== random_2) {
-    imgOne.src = `img/char-${random_1}.gif`;
+    imgOne.src = `img/charImg-${random_1}.jpeg`;
   } else {
     random_1 = randomNumber();
-    imgOne.src = `img/char-${random_1}.gif`;
+    imgOne.src = `img/charImg-${random_1}.jpeg`;
   }
   // change char name for player two
   let p2Name = charName[random_2];
@@ -94,22 +94,22 @@ btn.addEventListener("click", function () {
 
   // img change for player two
   if (random_2 !== random_1) {
-    imgTwo.src = `img/char-${random_2}.gif`;
+    imgTwo.src = `img/charImg-${random_2}.jpeg`;
   } else {
     random_2 = randomNumber();
-    imgTwo.src = `img/char-${random_2}.gif`;
+    imgTwo.src = `img/charImg-${random_2}.jpeg`;
   }
   window.setTimeout(function () {
     if (p1power > p2Power) {
-      winnerImg.src = `img/char-${random_1}.gif`;
+      winnerImg.src = `img/gif/char-${random_1}.gif`;
       mainBox.classList.add("hidden");
       winner.classList.remove("hidden");
       music.play();
     } else {
-      winnerImg.src = `img/char-${random_2}.gif`;
+      winnerImg.src = `img/gif/char-${random_2}.gif`;
       mainBox.classList.add("hidden");
       winner.classList.remove("hidden");
       music.play();
     }
-  }, 4000);
+  }, 3000);
 });

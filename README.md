@@ -7,8 +7,10 @@ how to run - simply open html file in your browser
 </br>
 
 # technology
-
-Html, Css, Scss, JavaScript
+       Html
+       Css
+       Scss
+       Javascript
 
 # how to play
 

@@ -30,7 +30,6 @@ okBtn.addEventListener("click", function () {
 });
 
 // main logic
-
 function randomNumber() {
   return Math.floor(Math.random() * 10) + 1;
 }
@@ -86,6 +85,7 @@ btn.addEventListener("click", function () {
     random_2 = randomNumber();
     imgTwo.src = `img/charImg-${random_2}.jpeg`;
   }
+  
   window.setTimeout(function () {
     if (p1power > p2Power) {
       winnerImg.src = `img/gif/char-${random_1}.gif`;

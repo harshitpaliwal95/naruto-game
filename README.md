@@ -2,8 +2,8 @@
 
 naruto game compare character to another character
 <br>
-hope you like it
-how to run - simply open html file in your browser
+hope you like it,
+#### how to run - simply open html file in your browser
 </br>
 
 # technology
